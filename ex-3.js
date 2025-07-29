@@ -374,4 +374,11 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+let billMembers;
+
+function newb(a){
+  billMembers= a.map( a => a.member).filter( a => a !== null).map(a=>a.name)
+  return billMembers
+   
+}
+console.log(newb(bills))

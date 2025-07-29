@@ -374,4 +374,16 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+let totalMembers;
+
+function newt(a){
+  let news = a.map( a => a.member).filter( a => a !== null).map(a=>a.name)
+  let alls  =  news.reduce((acc,cur)=> {
+  if(!acc.includes(cur)){
+    acc.push(cur)
+  } return acc
+}, [])
+  return totalMembers = alls.length
+}
+
+console.log(`Unique Members Count: ${newt(bills)}`)
