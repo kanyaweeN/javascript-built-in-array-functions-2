@@ -385,6 +385,6 @@ let accumulator = totalMembers.reduce((acc, cur, i) => {
   }
 
   return acc;
-}, []);
+}, []).length;
 
-console.log(`Unique Members Count: ${accumulator.length}`);
+console.log(`Unique Members Count: ${accumulator}`);
